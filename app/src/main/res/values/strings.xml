@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MoneyTracking</string>
+
+    <string name="daily">Daily</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+
 </resources>

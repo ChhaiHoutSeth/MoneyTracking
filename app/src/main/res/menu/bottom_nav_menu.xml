@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemDaily"
+        android:enabled="true"
+        android:icon="@drawable/ic_daily"
+        android:title="@string/daily" />
+
+    <item
+        android:id="@+id/itemMonthly"
+        android:enabled="true"
+        android:icon="@drawable/ic_monthly"
+        android:title="@string/monthly" />
+
+    <item
+        android:id="@+id/itemYearly"
+        android:enabled="true"
+        android:icon="@drawable/ic_yearly"
+        android:title="@string/yearly" />
+</menu>

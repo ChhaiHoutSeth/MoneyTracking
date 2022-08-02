@@ -1,10 +1,14 @@
 plugins {
-    id ("com.android.application")
+    id("com.android.application")
     kotlin("android")
 }
 
 android {
     compileSdkVersion(32)
+
+    buildFeatures {
+        dataBinding = true
+    }
 
     defaultConfig {
         applicationId = "com.moneytracking"
@@ -13,7 +17,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner ="androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
