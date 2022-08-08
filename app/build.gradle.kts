@@ -83,6 +83,9 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.5.1")
     implementation("androidx.appcompat:appcompat:1.6.0-alpha05")
 
+    // MP chart
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
     testImplementation("junit:junit:")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")

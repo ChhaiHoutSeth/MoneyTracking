@@ -7,6 +7,8 @@
         <entry key="app/src/main/res/font/open_sans_bold.xml" value="0.4185185185185185" />
         <entry key="app/src/main/res/font/open_sans_regular.xml" value="0.4185185185185185" />
         <entry key="app/src/main/res/font/open_sans_semibold.xml" value="0.4185185185185185" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.36519607843137253" />
+        <entry key="app/src/main/res/layout/fragment_daily.xml" value="0.33" />
       </map>
     </option>
   </component>
