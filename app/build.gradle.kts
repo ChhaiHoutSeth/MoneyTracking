@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion(32)
+    compileSdk = 32
 
     buildFeatures {
         dataBinding = true
@@ -14,8 +14,8 @@ android {
 
     defaultConfig {
         applicationId = "com.moneytracking"
-        minSdkVersion(26)
-        targetSdkVersion(32)
+        minSdk = 26
+        targetSdk = 32
         versionCode = 1
         versionName = "1.0"
 
@@ -84,7 +84,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.0-alpha05")
 
     // MP chart
-    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 
     testImplementation("junit:junit:")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
