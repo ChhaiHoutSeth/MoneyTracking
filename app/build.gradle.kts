@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    compileSdk = 32
+    compileSdk = 33
 
     buildFeatures {
         dataBinding = true
@@ -44,7 +44,7 @@ android {
 
 dependencies {
     implementation("androidx.core:core-ktx:1.8.0")
-    implementation("androidx.appcompat:appcompat:1.4.2")
+    implementation("androidx.appcompat:appcompat:1.5.0")
     implementation("com.google.android.material:material:1.6.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
@@ -79,12 +79,12 @@ dependencies {
     implementation("androidx.datastore:datastore-preferences:1.0.0")
 
     // activity & fragment ktx
-    implementation("androidx.fragment:fragment-ktx:1.5.1")
+    implementation("androidx.fragment:fragment-ktx:1.5.2")
     implementation("androidx.activity:activity-ktx:1.5.1")
-    implementation("androidx.appcompat:appcompat:1.6.0-alpha05")
+    implementation("androidx.appcompat:appcompat:1.6.0-beta01")
 
     // MP chart
-    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.0.2")
 
     testImplementation("junit:junit:")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")

@@ -4,5 +4,7 @@
     <string name="daily">Daily</string>
     <string name="monthly">Monthly</string>
     <string name="yearly">Yearly</string>
+    <string name="total_expending">TOTAL EXPENDING</string>
+    <string name="recent_expending">Recent expending</string>
 
 </resources>

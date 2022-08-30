@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/dailyFragment">
+
+    <fragment
+        android:id="@+id/dailyFragment"
+        android:name="com.moneytracking.ui.DailyFragment"
+        android:label="DailyFragment" />
+
+    <fragment
+        android:id="@+id/monthlyFragment"
+        android:name="com.moneytracking.ui.MonthlyFragment"
+        android:label="DailyFragment" />
+
+    <fragment
+        android:id="@+id/yearlyFragment"
+        android:name="com.moneytracking.ui.YearlyFragment"
+        android:label="DailyFragment" />
+</navigation>

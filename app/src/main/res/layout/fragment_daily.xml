@@ -3,23 +3,91 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/background">
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/tvGreeting"
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containerExpending"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvGreeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_24"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_dimen_32"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Good morning!" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pieChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    app:layout_constraintTop_toBottomOf="@id/tvGreeting" />
+
+                <include
+                    android:id="@+id/totalExpendingView"
+                    layout="@layout/total_expending_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="124dp"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:layout_marginBottom="@dimen/dimen_8"
+                    app:layout_constraintTop_toBottomOf="@id/pieChart" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvRecentExpending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/recent_expending"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/totalExpendingView" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvExpending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    app:layout_constraintTop_toBottomOf="@+id/tvRecentExpending"
+                    tools:itemCount="6"
+                    tools:listitem="@layout/item_expending" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAddExpending"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_16"
-            android:layout_marginTop="@dimen/dimen_24"
-            android:fontFamily="@font/open_sans_bold"
-            android:textColor="@color/black"
-            android:textSize="@dimen/tv_dimen_32"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Good morning!" />
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginBottom="@dimen/dimen_64"
+            android:backgroundTint="@color/blue_500"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_add"
+            app:borderWidth="0dp"
+            app:tint="@color/white" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </layout>
