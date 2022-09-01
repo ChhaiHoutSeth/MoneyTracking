@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.moneytracking.ui.DailyViewModel" />
+    </data>
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,6 +34,7 @@
                     android:layout_marginTop="@dimen/dimen_24"
                     android:fontFamily="@font/open_sans_bold"
                     android:textColor="@color/black"
+                    android:text="@{viewModel.greetingText}"
                     android:textSize="@dimen/tv_dimen_32"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -80,7 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_16"
             android:layout_marginBottom="@dimen/dimen_64"
             android:backgroundTint="@color/blue_500"
             android:contentDescription="@string/app_name"

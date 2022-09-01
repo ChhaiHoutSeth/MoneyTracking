@@ -6,5 +6,8 @@
     <string name="yearly">Yearly</string>
     <string name="total_expending">TOTAL EXPENDING</string>
     <string name="recent_expending">Recent expending</string>
+    <string name="good_morning">Good morning</string>
+    <string name="good_after_noon">Good Afternoon</string>
+    <string name="good_evening">Good Evening</string>
 
 </resources>
