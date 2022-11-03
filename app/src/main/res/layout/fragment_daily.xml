@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.moneytracking.ui.DailyViewModel" />
+            type="com.moneytracking.ui.home.HomeViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

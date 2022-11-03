@@ -1,13 +1,14 @@
 <resources>
     <string name="app_name">MoneyTracking</string>
 
-    <string name="daily">Daily</string>
-    <string name="monthly">Monthly</string>
-    <string name="yearly">Yearly</string>
+    <string name="home">Home</string>
+    <string name="statistic">Statistic</string>
+    <string name="account">Account</string>
     <string name="total_expending">TOTAL EXPENDING</string>
     <string name="recent_expending">Recent expending</string>
     <string name="good_morning">Good morning</string>
     <string name="good_after_noon">Good Afternoon</string>
     <string name="good_evening">Good Evening</string>
+    <string name="title">Title</string>
 
 </resources>

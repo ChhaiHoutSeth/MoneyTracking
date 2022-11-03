@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/dailyFragment"
-        android:name="com.moneytracking.ui.DailyFragment"
+        android:name="com.moneytracking.ui.home.HomeFragment"
         android:label="DailyFragment"
         tools:layout="@layout/fragment_daily"/>
 

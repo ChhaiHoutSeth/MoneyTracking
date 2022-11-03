@@ -1,11 +1,11 @@
-package com.moneytracking.ui
+package com.moneytracking.ui.home
 
 import androidx.lifecycle.ViewModel
 import com.moneytracking.App
 import com.moneytracking.R
 import java.util.*
 
-class DailyViewModel : ViewModel() {
+class HomeViewModel : ViewModel() {
 
     fun getGreetingText(): String {
         return when (Calendar.getInstance().get(Calendar.HOUR_OF_DAY)) {

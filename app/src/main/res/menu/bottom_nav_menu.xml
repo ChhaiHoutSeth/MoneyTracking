@@ -3,18 +3,18 @@
     <item
         android:id="@+id/dailyFragment"
         android:enabled="true"
-        android:icon="@drawable/ic_daily"
-        android:title="@string/daily" />
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
 
     <item
         android:id="@+id/monthlyFragment"
         android:enabled="true"
-        android:icon="@drawable/ic_monthly"
-        android:title="@string/monthly" />
+        android:icon="@drawable/ic_statistic"
+        android:title="@string/statistic" />
 
     <item
         android:id="@+id/yearlyFragment"
         android:enabled="true"
-        android:icon="@drawable/ic_yearly"
-        android:title="@string/yearly" />
+        android:icon="@drawable/ic_account"
+        android:title="@string/account" />
 </menu>

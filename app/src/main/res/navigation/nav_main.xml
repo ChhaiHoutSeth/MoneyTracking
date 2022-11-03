@@ -6,16 +6,16 @@
 
     <fragment
         android:id="@+id/dailyFragment"
-        android:name="com.moneytracking.ui.DailyFragment"
+        android:name="com.moneytracking.ui.home.HomeFragment"
         android:label="DailyFragment" />
 
     <fragment
         android:id="@+id/monthlyFragment"
-        android:name="com.moneytracking.ui.MonthlyFragment"
+        android:name="com.moneytracking.ui.statistic.StatisticFragment"
         android:label="DailyFragment" />
 
     <fragment
         android:id="@+id/yearlyFragment"
-        android:name="com.moneytracking.ui.YearlyFragment"
+        android:name="com.moneytracking.ui.account.AccountFragment"
         android:label="DailyFragment" />
 </navigation>
