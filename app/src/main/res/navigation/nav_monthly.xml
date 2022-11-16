@@ -9,6 +9,6 @@
         android:id="@+id/monthlyFragment"
         android:name="com.moneytracking.ui.statistic.StatisticFragment"
         android:label="MonthlyFragment"
-        tools:layout="@layout/fragment_monthly" />
+        tools:layout="@layout/fragment_statistic" />
 
 </navigation>

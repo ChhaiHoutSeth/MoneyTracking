@@ -7,7 +7,7 @@ import com.moneytracking.base.BaseFragment
 import com.moneytracking.databinding.FragmentDailyBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class HomeFragment: BaseFragment<FragmentDailyBinding>(R.layout.fragment_daily) {
+class HomeFragment: BaseFragment<FragmentDailyBinding>(R.layout.fragment_home) {
 
     private val viewModel by viewModel<HomeViewModel>()
 
